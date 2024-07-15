@@ -1,0 +1,31 @@
+<script>
+    if (location.pathname !== "/index.html") location.href = "/index.html?page=music";
+</script>
+
+<section>
+    <h2>The Great Library</h2>
+    <hr />
+    <p>This section aims to highlight the best my collection has to offer. Subsections may be presented in either:</p>
+    <ul>
+        <li>(1) Top artists, featuring a few of my favourites</li>
+        <li>(2) Top mediums, such as source game, similarly featuring a few of my favourites</li>
+        <li>(3) Top songs, for when artists or mediums are spread thin</li>
+    </ul>
+    <p>We're gonna need a bigger thumbdrive...</p>
+    <ul>
+        <li>📃 <b>Total Count</b> - 4268</li>
+        <li>📐 <b>Size</b> - 19.7GB</li>
+        <li>⌚ <b>Last Updated</b> - 14/07/2024</li>
+    </ul>
+</section>
+
+<section>
+    <ul class="section-navbar">
+        <li><button id="nav-bgm" class="music-navbar-item">🌃BGM🌇</button></li>
+        <li><button id="nav-retrowave" class="music-navbar-item">🌅Retrowave🌴</button></li>
+        <li><button id="nav-standard" class="music-navbar-item">🎸Standard🎺</button></li>
+        <li><button id="nav-wild" class="music-navbar-item">🪐Wild🌠</button></li>
+    </ul>
+    <hr />
+    <div id="music-main"></div>
+</section>

@@ -1,0 +1,487 @@
+<script>
+    if (location.pathname !== "/index.html") location.href = "/index.html?page=projects";
+</script>
+
+<div id="overlay"></div>
+<figure id="big-picture-popup"></figure>
+
+<section id="about-projects">
+    <h2>Projects</h2>
+    <hr />
+    <p>
+        As a software engineer, this page highlights some of the projects I've worked on over the years. The source code for each project can be reached by
+        clicking its corresponding icon.
+    </p>
+</section>
+<div id="project-control-container">
+    <button class="button-standard" id="project-expand-all">+ Expand All</button>
+    <button class="button-standard" id="project-collapse-all">- Collapse All</button>
+</div>
+
+<!-- TODO add contributors to each project as round icons with links -->
+
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/MadeInBandcamp" target="_blank"
+                    ><img src=https://github.com/maximus-lee-678/MadeInBandcamp/raw/main/MadeInBandcamp/assets/madeinbandcamp.jpg alt="MadeInBandcamp
+                    Repository" ></a
+                >
+                MadeInBandcamp
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <div class="accordion-title-tech-logo-secondary-container">
+                    <img class="tech-logo-secondary" src="assets/images/logos/curl-symbol.svg" alt="curl Logo" />
+                </div>
+                <img class="tech-logo-primary" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Logo" />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Console-based Utility Application</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>Windows utility to automatically download tracks from Bandcamp. Automatically performs ID3 tagging on downloaded songs.</p>
+            <p>
+                Specify any combination of tracks, albums or artists, and send it! The program automatically retrieves the underlying MP3-128 tracks from the
+                page source and downloads them to a single folder, fully tagged for your convienience.
+            </p>
+            <p>
+                <a
+                    alt="Bandcamp Help Center"
+                    href="https://get.bandcamp.help/hc/en-us/articles/360007902173-I-heard-you-can-steal-music-on-Bandcamp-What-are-you-doing-about-this"
+                    target="_blank"
+                    >READ: Bandcamp's stance on track rips</a
+                >. If you enjoy an artist's work, please support them by purchasing their track(s) directly. You gain access to high-quality MP3s, FLACs, and
+                unlimited streaming!
+            </p>
+
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="bc"
+                    pos="1"
+                    src="assets/images/repos_screenshots/bc/choose_links.png"
+                    alt="Choose tracks, albums or artists"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="bc"
+                    pos="2"
+                    src="assets/images/repos_screenshots/bc/downloading.png"
+                    alt="Downloads in Progress"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="bc"
+                    pos="3"
+                    src="assets/images/repos_screenshots/bc/downloaded.png"
+                    alt="Downloaded tagged content"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/PokemapLockOn" target="_blank"
+                    ><img src=https://github.com/maximus-lee-678/PokemapLockOn/raw/main/PokemapLockOn/resource/favicon.png alt="PokemapLockOn Repository" /></a
+                >
+                PokemapLockOn
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <div class="accordion-title-tech-logo-secondary-container">
+                    <img class="tech-logo-secondary" src="assets/images/logos/curl-symbol.svg" alt="curl Logo" />
+                </div>
+                <img class="tech-logo-primary" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="C Logo" />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Console-based Utility Application</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                Windows utility that polls sgpokemap.com to obtain raid details at set intervals. Created since the original website does not have any built in
+                form of notification.
+            </p>
+            <p>
+                Allows you to choose gyms to track, polling time interval and which raid tiers to display and notify while having a light memory footprint. Gyms
+                can be added by name search or proximity from specified "home" coordinates.
+            </p>
+            <p>#HearUsNiantic, revert the remote raid pass changes!!!1!</p>
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img class="accordion-gallery-item" gallery-group="plo" pos="1" src="assets/images/repos_screenshots/plo/min_mode.png" alt="Minimal Mode" />
+                <img class="accordion-gallery-item" gallery-group="plo" pos="2" src="assets/images/repos_screenshots/plo/max_mode.png" alt="Maximal Mode" />
+                <img class="accordion-gallery-item" gallery-group="plo" pos="3" src="assets/images/repos_screenshots/plo/opts_menu.png" alt="Option Menu" />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="plo"
+                    pos="4"
+                    src="assets/images/repos_screenshots/plo/opts_tier_display.png"
+                    alt="Options: Tiers to Display"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="plo"
+                    pos="5"
+                    src="assets/images/repos_screenshots/plo/opts_gym_radius.png"
+                    alt="Choosing gyms (radius mode)"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/2DRoyale" target="_blank">🔫</a>
+                2DRoyale
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <img class="tech-logo-primary" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Logo" />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">2D Game</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                • A multiplayer networked top-down battle royale where players battle each other in a shrinking arena. Players can enter their usernames, which
+                are displayed above their characters and in the kill-feed.
+                <br />
+                • Each player is initially spawned at random locations throughout the map and will need to scavenge for weapons located in crates randomly
+                spawned thorughout the map. Weapons include the SMG, Sniper, Rifle and Shotgun.
+                <br />
+                • Players seek out and eliminate one another until only one player is left standing. A gas wall that deals heavy contact damage closes in to the
+                centre of the playable area as the match progresses, encouraging player engagement.
+            </p>
+            <p>
+                A labor of love for our OOP module, our team went vanilla with this project. No game development libraries were used, only basic Java Swing with
+                a rudimentary networking system. Many a good time was had testing the game over Hamachi!
+            </p>
+            <p>
+                I did a lot of work on the terrain and structures, implementing their generation and collision. Many an ArrayIndexOutOfBoundsException was
+                thrown in the process...
+            </p>
+            <p>
+                The terrain is implemented in quite an interesting way; it's mapped to randomised textures based on image data from a small file! Does the
+                battleground look familiar?
+            </p>
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img class="accordion-gallery-item" gallery-group="royale" pos="1" src="assets/images/repos_screenshots/royale/menu.png" alt="Menu" />
+                <img class="accordion-gallery-item" gallery-group="royale" pos="2" src="assets/images/repos_screenshots/royale/gameplay_1.png" alt="Gaming" />
+                <img class="accordion-gallery-item" gallery-group="royale" pos="3" src="assets/images/repos_screenshots/royale/gameplay_2.png" alt="Gaming 2" />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="royale"
+                    pos="4"
+                    src="assets/images/repos_screenshots/royale/bootleg_olympus.png"
+                    alt="Minimap"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="royale"
+                    pos="5"
+                    src="assets/images/repos_screenshots/royale/next_gen_collision.png"
+                    alt="Collision"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678" target="_blank">🍍</a>
+                Pineapple
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <div class="accordion-title-tech-logo-secondary-container">
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
+                        alt="Express.js Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg"
+                        alt="Node.js Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg"
+                        alt="tailwind.css Logo"
+                    />
+                </div>
+                <img
+                    class="tech-logo-primary"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
+                    alt="React Logo"
+                />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Website - Full Stack</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                An online forum website implemented as a MERN stack using tailwind.css for styling. Developed for a Secure Software Development module, this
+                project sports a wide array of security features on both the client and server side, including Anti-CSRF, JWTs, rate limiting and more.
+            </p>
+            <p>
+                This website's layout was inspired in part by both Reddit (general layout) and YouTube (comments section). I had a big part in the frontend
+                design and implementation for this project, and I have to admit that tailwind really does simplify the styling of elements. React is also an
+                interesting beast, what with all of the state based functionality. Components are great though, wish I had some when creating this website!
+            </p>
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="pineapple"
+                    pos="1"
+                    src="assets/images/repos_screenshots/pineapple/login.png"
+                    alt="Login Page"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="pineapple"
+                    pos="2"
+                    src="assets/images/repos_screenshots/pineapple/home.png"
+                    alt="Home Screen"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="pineapple"
+                    pos="3"
+                    src="assets/images/repos_screenshots/pineapple/organisations.png"
+                    alt="Organisation Screen"
+                />
+                <img class="accordion-gallery-item" gallery-group="pineapple" pos="4" src="assets/images/repos_screenshots/pineapple/post.png" alt="A Post" />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/SMart" target="_blank">🛒</a>
+                SMart
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <div class="accordion-title-tech-logo-secondary-container">
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+                        alt="HTML Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                        alt="CSS Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg"
+                        alt="jQuery Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+                        alt="MySQL Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
+                        alt="MongoDB Logo"
+                    />
+                </div>
+                <img class="tech-logo-primary" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP Logo" />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Website - Full Stack</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                A PHP-based website that aggregates available products from various supermarkets. It uses a Business to Consumers (B2C) platform, wherein an
+                online retailer sells its products directly to consumers. This application allows consumers to place orders on items offered by four different
+                supermarkets.
+            </p>
+            <p>
+                Features a public-facing component which displays products for sale and an administrator portal allowing admins to dispatch orders and update
+                stock.
+            </p>
+            <p style="text-decoration: line-through">Shop Smart, Shop S-Mart!</p>
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img class="accordion-gallery-item" gallery-group="smart" pos="1" src="assets/images/repos_screenshots/smart/main_menu.png" alt="Main Menu" />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="smart"
+                    pos="2"
+                    src="assets/images/repos_screenshots/smart/products.png"
+                    alt="View Products"
+                />
+                <img class="accordion-gallery-item" gallery-group="smart" pos="3" src="assets/images/repos_screenshots/smart/reviews.png" alt="Reviews" />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="smart"
+                    pos="4"
+                    src="assets/images/repos_screenshots/smart/checkout.png"
+                    alt="Checkout Page"
+                />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="smart"
+                    pos="5"
+                    src="assets/images/repos_screenshots/smart/admin_portal.png"
+                    alt="Administrator Portal"
+                />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/ScopeGoWhere" target="_blank"
+                    ><img src=https://github.com/maximus-lee-678/ScopeGoWhere/raw/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png alt="ScopeGoWhere
+                    Repository" /></a
+                >
+                ScopeGoWhere
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <img
+                    class="tech-logo-primary"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg"
+                    alt="Kotlin Logo"
+                />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Mobile Application</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                The work of many! Written for a Mobile Development module, this application aims to simplify tracking of endoscope usage and servicing cycles.
+                This application features NFC, QR Scanning, Computer Vision, Multimedia display and more.
+            </p>
+            <p>
+                Many a moment was spent wrapping my head around the structure of an Android application. Working with Android concepts such as Activities,
+                Fragments, Data Stores, and even the different lifecycle components is not easy for a first timer. I spent quite a bit of time working on the
+                calendar schedule, which makes use of most of the aforementioned components.
+            </p>
+            <p>The development of the calendar has also led to the occurrence of the lengendary "calendar.time" incident. See the code for yourself:</p>
+            <div class="accordion-codeblock">
+                <!-- I need to use br a lot since the formatter keeps spoiling the lines... -->
+                <span>
+                    // Update calendar to current day, then loop through each day of that week and store to array<br />
+                    // i have no idea why on god's green earth does calendarObject require an operation on it<br />
+                    // before it works properly, if calendarObject.time is commented, weekArray[0] will always<br />
+                    // display the previously selected day<br />
+                    // so it is important that line is not deleted<br />
+                    // maybe some computer science fella can explain it to memory<br />
+                    calendarObject = GregorianCalendar(year!!, month!! - 1, day!!)<br />
+                    calendarObject.time
+                </span>
+            </div>
+            <p>To this day I still have no idea why this is necessary, and it's gonna haunt me to my grave.</p>
+            <p class="accordion-content-subheader">Gallery</p>
+            <div class="accordion-gallery">
+                <img class="accordion-gallery-item" gallery-group="sgw" pos="1" src="assets/images/repos_screenshots/sgw/home.png" alt="Home Page" />
+                <img class="accordion-gallery-item" gallery-group="sgw" pos="2" src="assets/images/repos_screenshots/sgw/scope_all.png" alt="All Scopes" />
+                <img
+                    class="accordion-gallery-item"
+                    gallery-group="sgw"
+                    pos="3"
+                    src="assets/images/repos_screenshots/sgw/calendar_scope.png"
+                    alt="Calendar / Scope Info"
+                />
+                <img class="accordion-gallery-item" gallery-group="sgw" pos="4" src="assets/images/repos_screenshots/sgw/scan_qr.png" alt="QR Scan" />
+                <img class="accordion-gallery-item" gallery-group="sgw" pos="5" src="assets/images/repos_screenshots/sgw/videos.png" alt="Multimedia Page" />
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            <div class="accordion-title">
+                <a href="https://github.com/maximus-lee-678/" target="_blank"
+                    ><img src="assets/favicon/android-chrome-192x192.png" alt="ScopeGoWhere Repository"
+                /></a>
+                Sprite Fields
+            </div>
+            <div class="accordion-title-tech-logo-container">
+                <div class="accordion-title-tech-logo-secondary-container">
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+                        alt="CSS Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo"
+                    />
+                    <img
+                        class="tech-logo-secondary"
+                        src="https://raw.githubusercontent.com/devicons/devicon/master/icons/jquery/jquery-original.svg"
+                        alt="jQuery Logo"
+                    />
+                </div>
+                <img class="tech-logo-primary" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML Logo" />
+            </div>
+        </button>
+
+        <div class="accordion-content">
+            <p class="accordion-content-header">Website - Static</p>
+            <p class="accordion-content-subheader">Description</p>
+            <p>
+                Handmade with &lt;3! A passion project of mine, wrestling with CSS has been... an interesting experience to say the least (looking at you,
+                transform)! jQuery ain't dead...
+            </p>
+            <p>
+                In the earlier days of the internet, there existed many static webpages created by many individuals, the likes of which can still be found on
+                Neocities, for example. Some have really cozy vibes, others ooze aesthetic, and a few show off their technical prowess. Seeing the creativity
+                and expression of others inspired me to create my own little corner on the internet.
+            </p>
+            <p>Much like my music tastes, I also love the 80s retro aesthetic. The website needs to have neon lights, gridlines, setting sun, the whole lot!</p>
+            <p>
+                Credits:
+                <br />
+                Site Logo&gt; Adapted from Hoyoverse's Zenless Zone Zero
+                <br />
+                <a alt="Background Image Link" href="https://4kwallpapers.com/abstract/outrun-neon-dark-background-purple-4523.html" target="_blank"
+                    >Background Image</a
+                >
+                <br />
+                BGM Video&gt; Adapted from Hoyoverse's Zenless Zone Zero
+                <br />
+                <a alt="Retrowave Original Source" href="https://www.youtube.com/watch?v=ZTidn2dBYbY" target="_blank">Music - Retrowave Original</a>
+                <br />
+                <a alt="Standard Original Source" href="https://www.youtube.com/watch?v=J3cg4tFLm7A" target="_blank">Music - Standard Original</a>
+                <br />
+                Music - Wild Original&gt; Metal Gear Rising: Revengeance
+            </p>
+        </div>
+    </div>
+</div>

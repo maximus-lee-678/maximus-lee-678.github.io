@@ -1,0 +1,222 @@
+#project-control-container {
+    width: 50%;
+    margin: 8px auto 8px auto;
+    text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    #project-control-container {
+        width: 100%;
+        margin: 8px auto 8px auto;
+        text-align: right;
+    }
+}
+
+.accordion {
+    width: 50%;
+    margin: 8px auto 8px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    .accordion {
+        width: 100%;
+        margin: 8px auto 8px auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.accordion-item {
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.accordion-header {
+    font-family: RobotoMonoBold;
+    font-size: 1.5em;
+    background-color: var(--background-0);
+    color: var(--text-default);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accordion-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.accordion-title a {
+    text-align: center; /* for emojis */
+    min-width: 36px;
+    padding-right: 8px;
+}
+
+.accordion-title a img {
+    margin: auto;
+    display: block;
+    height: 1.5em;
+}
+
+.accordion-header img {
+    height: 1.5em;
+}
+
+.accordion-content {
+    display: none; /* toggled to flex when selected by user */
+    flex-direction: column;
+    background-color: rgba(var(--background-1-rgb), 0.8);
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.accordion-content p {
+    margin-top: 4px;
+}
+
+.accordion-content a {
+    color: var(--link-default);
+}
+
+.accordion-content a:hover {
+    color: var(--link-hover);
+}
+
+.accordion-codeblock {
+    font-family: RobotoMonoLight;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: var(--background-0);
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 8px;
+    border-color: var(--border);
+}
+
+.accordion-codeblock span {
+    color: var(--text-terminal);
+    animation: flicker-subtle 0.25s infinite;
+}
+
+.accordion-content-header {
+    font-family: RobotoMonoBold;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+.accordion-content-header::before {
+    content: "「";
+}
+
+.accordion-content-header::after {
+    content: "」";
+}
+
+.accordion-content-subheader {
+    display: flex;
+    align-self: flex-start; /* makes the bounding box fit content instead of parent */
+    font-family: RobotoMonoBold;
+    font-size: 1.25em;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: var(--background-0);
+    border-width: 2px;
+    border-style: dashed solid dashed solid;
+    border-radius: 8px;
+    border-color: var(--border);
+}
+
+.accordion-title-tech-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.accordion-title-tech-logo-secondary-container {
+    display: none; /* toggled to flex when selected by user */
+    border-radius: 8px;
+    padding: 4px;
+    background-color: var(--background-3);
+    flex-direction: row-reverse;
+    align-items: center;
+    align-self: flex-start; /* makes the bounding box fit content instead of parent */
+    gap: 4px;
+}
+
+.tech-logo-primary {
+    height: 36px;
+}
+
+.tech-logo-secondary {
+    height: 36px;
+    filter: drop-shadow(0px 0px 1px rgb(var(--synth-yellow-rgb)));
+}
+
+.accordion-gallery {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-gallery img {
+    flex-grow: 1;
+    cursor: zoom-in;
+    max-height: 160px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#big-picture-popup {
+    margin: 0; /* figure element default margins screws with transform, reset it */
+    padding: 0; /* figure element default paddings screws with transform, reset it */
+    position: fixed;
+    max-width: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    cursor: zoom-out; /* for mousing over any empty space in popup (usually side of figcaption) */
+}
+
+#big-picture-popup img {
+    max-width: 100%;
+    height: auto;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: var(--border);
+    box-sizing: border-box; /* To account border width when transforming */
+    cursor: pointer;
+}
+
+#big-picture-popup figcaption {
+    margin: auto;
+    padding: 4px;
+    font-family: RobotoMonoSemiBold;
+    background-color: var(--background-0);
+    border-style: solid;
+    width: max-content;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--text-default);
+    cursor: default;
+}

@@ -1,0 +1,104 @@
+.section-navbar li .music-navbar-hover {
+    text-decoration: underline overline double;
+    text-emphasis: open triangle;
+    text-emphasis-position: under left;
+    color: var(--text-default);
+    text-shadow: 0 0 20px var(--text-default);
+}
+
+.section-navbar li .music-navbar-selected {
+    text-decoration: underline overline double;
+    text-emphasis: open triangle;
+    text-emphasis-position: under left;
+    color: var(--text-yellow);
+    text-shadow: 0 0 20px var(--text-yellow);
+}
+
+.music-main .music-stinger {
+    font-family: RobotoMonoBold;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 8px;
+    margin: 8px auto;
+    width: fit-content;
+    background-color: var(--background-1);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--border);
+}
+
+@media only screen and (max-width: 768px) {
+    .music-main .music-stinger {
+        font-family: RobotoMonoBold;
+        font-size: 1.25em;
+        text-align: center;
+        padding: 8px;
+        margin: 8px;
+        width: auto;
+        background-color: var(--background-1);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 8px;
+        border-color: var(--border);
+    }
+}
+
+.music-main .music-stinger::before {
+    content: "𝄞 ";
+}
+
+.music-main .music-stinger::after {
+    content: " 𝄢";
+}
+
+.music-main .music-foreword {
+    font-family: RobotoMonoRegular;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.music-main video {
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .music-main video {
+        width: calc(100% - 16px); /* 16px is the padding width for other elements */
+        display: block;
+        margin: auto;
+        border-radius: 16px;
+    }
+}
+
+.music-content-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.music-content-container .music-content-artists {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.music-content-container .music-content-artists img {
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--border);
+    padding: 4px;
+    max-width: 48px;
+    cursor: pointer;
+}
+
+.music-content-container .music-content-artist-about {
+    font-family: RobotoMonoRegular;
+    padding-left: 8px;
+    padding-right: 8px;
+}

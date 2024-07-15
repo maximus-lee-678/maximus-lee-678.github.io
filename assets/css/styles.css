@@ -1,0 +1,221 @@
+/* 
+# - ID
+. = class 
+*/
+
+:root {
+    /* there must always be..., an rgb equivalent. */
+
+    /* text */
+    --text-default: #7fffd4; /* aquamarine; */
+    --text-terminal: #1cfa05;
+    --text-yellow: #cfff04;
+    --link-default: #65ff00;
+    --link-hover: #ff80ff;
+    --synth-aqua: #40fcfe;
+    --synth-red: #f81d35;
+    --synth-pink: #ff22ff;
+    --synth-yellow: #fdfe62;
+    --synth-green: #1ef80b;
+    --text-default-rgb: 128, 255, 212;
+    --text-terminal-rgb: 28, 250, 5;
+    --text-yellow-rgb: 253, 254, 98;
+    --link-default-rgb: 101, 255, 0;
+    --link-hover-rgb: 255, 128, 255;
+    --synth-aqua-rgb: 64, 252, 254;
+    --synth-red-rgb: 248, 29, 53;
+    --synth-pink-rgb: 255, 34, 255;
+    --synth-yellow-rgb: 253, 254, 98;
+    --synth-green-rgb: 30, 248, 11;
+
+    /* backgrounds: the smaller, the darker */
+    --background-0: #000000;
+    --background-1: #130826;
+    --background-2: #34092d;
+    --background-3: #38124f;
+    --background-0-rgb: 0, 0, 0;
+    --background-1-rgb: 19, 8, 38;
+    --background-2-rgb: 52, 9, 45;
+    --background-3-rgb: 56, 18, 79;
+
+    --border: #f772e0;
+    --white: #ffffff;
+    --border-rgb: 247, 114, 224;
+    --white-rgb: 255, 255, 255;
+}
+
+@font-face {
+    font-family: "RobotoMonoRegular";
+    src: url("../fonts/roboto/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoMonoBold";
+    src: url("../fonts/roboto/RobotoMono-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoMonoSemiBold";
+    src: url("../fonts/roboto/RobotoMono-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "RobotoMonoLight";
+    src: url("../fonts/roboto/RobotoMono-Light.ttf") format("truetype");
+}
+
+@keyframes flicker-default {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flicker-subtle {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: RobotoMonoRegular;
+    background-color: var(--background-0);
+    background-image: url("../images/outrun-neon-dark-background-purple-3840x2160-4523.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: var(--text-default);
+}
+
+.banner {
+    font-family: RobotoMonoBold;
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: dotted underline;
+}
+
+section a {
+    color: var(--link-default);
+}
+
+section a:hover {
+    color: var(--link-hover);
+}
+
+section {
+    width: 50%;
+    margin: 8px auto 8px auto;
+    background-color: var(--background-0);
+    border-radius: 8px;
+    padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        margin: 8px auto 8px auto;
+        background-color: var(--background-0);
+        border-radius: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+section h2 {
+    font-family: RobotoMonoBold;
+    margin: 0px;
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-shadow: 0 0 20px var(--text-default);
+}
+
+section p {
+    font-family: RobotoMonoRegular;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+section li {
+    font-family: RobotoMonoRegular;
+}
+
+section hr {
+    color: var(--text-default);
+}
+
+section video {
+    width: 75%;
+    display: block;
+    margin: auto;
+    border-radius: 16px;
+}
+
+.section-navbar {
+    list-style-type: none;
+    width: 100%;
+    margin: 0px 0px -8px 0px;
+    padding: 0px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-navbar li button {
+    font-family: RobotoMonoBold;
+    font-size: 1.25em;
+    margin: 0px 0px -8px 0px;
+    display: block;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    background-color: var(--background-0);
+    color: var(--text-default);
+    text-shadow: 0 0 20px var(--text-default);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--background-1-rgb), 0.8);
+    z-index: 2;
+    cursor: zoom-out;
+}
+
+.button-standard {
+    font-family: RobotoMonoSemiBold;
+    font-size: 1em;
+    background-color: var(--background-0);
+    color: var(--text-default);
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: var(--border);
+    cursor: pointer;
+}
